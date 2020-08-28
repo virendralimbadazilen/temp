@@ -15,4 +15,4 @@ phases:
       - ls
 artifacts:
   files:
-    - build/libs/sample-rest-0.0.1-SNAPSHOT.jar
+    - sample-rest/build/libs/sample-rest-0.0.1-SNAPSHOT.jar
