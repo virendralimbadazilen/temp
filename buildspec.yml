@@ -15,6 +15,9 @@ phases:
       - cd ~
       - ls
       - ls /codebuild/output/
+      - ls /codebuild/output/artifacts
+      - ls /codebuild/output/default
+      - ls /codebuild/output/tmp
 artifacts:
   files:
-    - ./sample-rest/build/libs/sample-rest-0.0.1-SNAPSHOT.jar
+    - /sample-rest/build/libs/sample-rest-0.0.1-SNAPSHOT.jar
