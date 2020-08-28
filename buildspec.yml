@@ -12,7 +12,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - ls
 artifacts:
   files:
+    - echo for artifacts started on `date`
+    - ls
     - sample-rest/build/libs/sample-rest-0.0.1-SNAPSHOT.jar
