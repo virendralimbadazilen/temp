@@ -8,6 +8,8 @@ phases:
     commands:
       - echo Build started on `date`
       - java -version
+      - ls
+      - cd sample-rest
       - gradle build
   post_build:
     commands:
@@ -15,5 +17,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'samplerest*'
-  discard-paths: yes
+  discard-paths: no
