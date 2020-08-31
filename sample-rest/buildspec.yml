@@ -14,5 +14,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - sample-rest-0.0.1-SNAPSHOT.jar
+    - '**/*'
+  base-directory: 'samplerest*'
   discard-paths: yes
