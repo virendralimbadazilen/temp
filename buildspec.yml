@@ -11,10 +11,12 @@ phases:
       - ls
       - cd sample-rest
       - gradle bootJar
+      - cd ~
+      - ls /codebuild/output/
+      - ls /codebuild/output/artifacts
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/libs/sample-rest-0.0.1-SNAPSHOT.jar
-  discard-paths: no
+    - /sample-rest/build/libs/sample-rest-0.0.1-SNAPSHOT.jar
